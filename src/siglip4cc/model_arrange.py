@@ -25,7 +25,7 @@ def encode_rgb_images_for_rsformer(
     after_image: Image | Path,
     device: torch.device,
 ) -> torch.Tensor:
-    dataset = Siglip4IDC(
+    dataset = Siglip_DataLoader(
         bef_img_path=before_image,
         aft_img_path=after_image,
     )
@@ -43,7 +43,6 @@ def encode_rgb_images_for_rsformer(
 
 
 def load_model(model_file: str | os.PathLike) -> Siglip4IDC:
-    args = get_model_args()
     if os.path.exists(model_file):
         print("Model loaded from %s", model_file)
 
