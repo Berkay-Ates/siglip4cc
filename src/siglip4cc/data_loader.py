@@ -104,7 +104,7 @@ class Siglip_DataLoader(Dataset):
             dtype=np.float32,
         )
 
-        raw_image_data = self.rawImageExtractor.get_image_data(image_path)
+        raw_image_data = self.rawImageExtractor.load_image(image_path)
         raw_image_data = raw_image_data["image"].pixel_values.reshape(1, 3, 224, 224)
 
         image[0] = raw_image_data

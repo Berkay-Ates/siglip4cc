@@ -17,7 +17,6 @@ class RawImageExtractorCV2:
         self.transform = AutoProcessor.from_pretrained("google/siglip-base-patch16-224")
 
     def load_image(self, data):
-
         if isinstance(data, Image.Image):
             return self.get_image_data(data)
 
