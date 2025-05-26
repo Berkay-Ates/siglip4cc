@@ -5,7 +5,7 @@ from torch import nn
 from torch.nn import CrossEntropyLoss
 from safetensors.torch import load_file
 
-from until_module import PreTrainedModel, AllGather, CrossEn
+from siglip4cc.until_module import PreTrainedModel, AllGather, CrossEn
 
 from siglip4cc.siglip.module_siglip import Siglip
 

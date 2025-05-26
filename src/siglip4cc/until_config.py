@@ -27,7 +27,7 @@ import tarfile
 import tempfile
 import shutil
 import torch
-from .file_utils import cached_path
+from siglip4cc.file_utils import cached_path
 
 logger = logging.getLogger(__name__)
 
