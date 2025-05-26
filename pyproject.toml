@@ -1,0 +1,15 @@
+[project]
+name = "siglip4cc"
+version = "0.3.0"
+description = "A Python package for vectorizing image pairs and change captioning based on SIGLIP4CC"
+readme = "README.md"
+authors = [
+  { name = "Berkay Ates", email = "atesberkay2356@gmail.com" },
+]
+dependencies = [
+    "sentencepiece>=0.2.0",
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.52.3",
+]
