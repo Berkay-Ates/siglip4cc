@@ -33,7 +33,7 @@ class RawImageExtractorCV2:
 
         return {"image": image_data}
 
-    def get_image_data(self, image_path):
+    def get_image_data(self, image_loaded):
         image_loaded = image_loaded.convert("RGB")
         image_loaded = self.transform(image_loaded)
 
