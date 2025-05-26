@@ -4,7 +4,6 @@ from typing import Any
 from typing import Literal
 from pathlib import Path
 
-
 import logging
 
 import numpy as np
